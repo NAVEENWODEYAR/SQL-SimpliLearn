@@ -1,0 +1,3 @@
+SQL
+- Language of database
+- Used as Client Server language for connecting frontEnd & backEnd,
