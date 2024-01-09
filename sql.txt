@@ -18,3 +18,5 @@ SQL
 		HAVING										 : Filter out based on groups
 		ORDER BY									 : Sorting
 		
+		
+	GROUP BY - groups records into summary rows & records one record for each group.
