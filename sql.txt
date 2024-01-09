@@ -1,3 +1,20 @@
 SQL
 - Language of database
-- Used as Client Server language for connecting frontEnd & backEnd,
+- Used as Client Server language for connecting frontEnd & backEnd.
+- ER diagram, provides the logical structure of db,(GUI of logical structure).
+- RelationShips.
+- SQL Commands
+
+	DDL- [Create,Alter,Drop,Truncate] auto-commit
+	DML-[Select,Update,Delete,Insert] 
+	DCl-[Grant,Revoke]
+	TCL-[Commit,RollBack]
+
+	SELECT
+		SELECT column1,column2,,,,,columnN
+		FROM TABLE_NAME								 : Table 
+		WHERE condition1,condition2,,,,conditionN 	 : Filter the data
+		GROUP BY									 : Various columns
+		HAVING										 : Filter out based on groups
+		ORDER BY									 : Sorting
+		
