@@ -20,3 +20,4 @@ SQL
 		
 		
 	GROUP BY - groups records into summary rows & records one record for each group.
+			- Syntax, 

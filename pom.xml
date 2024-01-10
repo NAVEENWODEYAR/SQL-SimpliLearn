@@ -5,4 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>DataBaseConnectivity</name>
   <description>Database is place to store the data.,</description>
+  
+  <dependencies>
+	  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>6.1.2</version>
+	</dependency>
+
+  </dependencies>
 </project>
