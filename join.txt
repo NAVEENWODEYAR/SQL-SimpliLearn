@@ -1,0 +1,2 @@
+JOINS IN SQL,,
+ - used to combine data from two or more tables.
