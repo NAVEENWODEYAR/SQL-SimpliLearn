@@ -26,3 +26,15 @@ SQL
 						WHERE CONDITION,
 						GROUP BY COLUMN_NAME,
 						ORDER BY COLUMN_NAME;
+						
+						
+	HAVING - used with aggregate functions,
+		   - Syntax,
+		   				SELECT COLUMN NAMES,
+						FROM TABLE_NAME,
+						WHERE CONDITION,
+						GROUP BY COLUMN_NAME,
+						HAVING CLAUSE
+						ORDER BY COLUMN_NAME;
+						
+		   
