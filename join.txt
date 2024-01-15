@@ -7,3 +7,40 @@ JOINS IN SQL,,
  Triggers: 
  		An SQL trigger is a database object that is associated with a table and automatically executes a set of SQL statements when a specific event occurs on that table
  
+ Stored Procedures:
+ 	
+ 	
+-- stored procedure to employees with sal>4L
+delimiter $$
+create procedure sp_max_salary1()
+begin
+	select * from employee where salary > 400000;
+end $$
+delimiter ;
+call sp_max_salary1();
+
+-- sp using IN
+delimiter &&
+create procedure sp_sortBySal(in var int)
+begin
+	select * from employee
+    order by salary desc
+    limit var;
+end &&
+delimiter ;
+call sp_sortBySal(5);
+
+
+# sp to update salary
+delimiter $$
+create procedure sp_updateSalary(IN name varchar(20),IN sal float)
+begin
+	update employee
+    set salary = sal
+    where first_name = name;
+end $$
+delimiter ;
+call sp_updateSalary('Bhaskar',254321);
+
+ 	
+ 			
