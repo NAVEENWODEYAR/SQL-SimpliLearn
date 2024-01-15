@@ -3,3 +3,7 @@ JOINS IN SQL,,
  - Inner join , Outer join, full join
  - Inner Join: returns all the commons records both from the tables as the conditions met.
  - Outer Join: returns all the rows from left table and matching from right table.
+ 
+ Triggers: 
+ 		An SQL trigger is a database object that is associated with a table and automatically executes a set of SQL statements when a specific event occurs on that table
+ 
