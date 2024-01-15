@@ -43,4 +43,16 @@ delimiter ;
 call sp_updateSalary('Bhaskar',254321);
 
  	
+ 	
+ 	 
+# sp for femaleEmpCount using OUT Parameter,
+delimiter $$
+create procedure sp_femaleEmpCount(OUT Fem_Count int)
+begin
+	select count(first_name) into Fem_Count from employee
+    where gender='Female';
+end $$
+delimiter ;
+call sp_femaleEmpCount(@F_emp);
+select @F_emp as Female_Employees;
  			
