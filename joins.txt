@@ -7,27 +7,27 @@ JOINS IN SQL,,
  Triggers: 
  		An SQL trigger is a database object that is associated with a table and automatically executes a set of SQL statements when a specific event occurs on that table
  
-create table if not exists student(stId int primary key,stAge int,stName varchar(50),stMarks float not null);
-# before insert trigger
-delimiter //
-create trigger before_Insert
-before insert 
-on student
-for each row
-	if new.stMarks < 0 then set new.stmarks = 50;
-end if ;//
+	create table if not exists student(stId int primary key,stAge int,stName varchar(50),stMarks float not null);
+	# before insert trigger
+		delimiter //
+		create trigger before_Insert
+		before insert 
+		on student
+		for each row
+			if new.stMarks < 0 then set new.stmarks = 50;
+		end if ;//
 
 
  Stored Procedures:
  	 	
 -- stored procedure to employees with sal>4L
-delimiter $$
-create procedure sp_max_salary1()
-begin
-	select * from employee where salary > 400000;
-end $$
-delimiter ;
-call sp_max_salary1();
+		delimiter $$
+		create procedure sp_max_salary1()
+		begin
+			select * from employee where salary > 400000;
+		end $$
+		delimiter ;
+		call sp_max_salary1();
 
 -- sp using IN
 delimiter &&

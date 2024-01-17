@@ -6,6 +6,7 @@ view and reuse it repeatedly. Actually, view does not store
 any data however, it contains the retrieve statements to
 provide re-usability. We can create view if we use some
 queries mostly.
-create view EmployeeInfo as
-select first_name || last_name as "Full Name"
-from employees;
+
+		create view EmployeeInfo as
+		select first_name || last_name as "Full Name"
+		from employees;
