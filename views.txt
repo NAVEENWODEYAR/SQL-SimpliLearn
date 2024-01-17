@@ -1,11 +1,11 @@
 VIEWS 
-Views are created in order to store your queries as virtual
-table. If there are a lot of columns and we don’t want to
-use all columns and make the table simpler, we can create a
-view and reuse it repeatedly. Actually, view does not store
-any data however, it contains the retrieve statements to
-provide re-usability. We can create view if we use some
-queries mostly.
+	Views are created in order to store your queries as virtual
+	table. If there are a lot of columns and we don’t want to
+	use all columns and make the table simpler, we can create a
+	view and reuse it repeatedly. Actually, view does not store
+	any data however, it contains the retrieve statements to
+	provide re-usability. We can create view if we use some
+	queries mostly.
 
 		create view EmployeeInfo as
 		select first_name || last_name as "Full Name"
