@@ -7,6 +7,6 @@ VIEWS
 	provide re-usability. We can create view if we use some
 	queries mostly.
 
-		create view EmployeeInfo as
+		CREATE VIEW EmployeeInfo as
 		select first_name || last_name as "Full Name"
 		from employees;

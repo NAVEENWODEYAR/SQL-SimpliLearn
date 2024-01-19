@@ -19,7 +19,6 @@ JOINS IN SQL,,
 
 
  Stored Procedures:
- 	 	
 -- stored procedure to employees with sal>4L
 		delimiter $$
 		create procedure sp_max_salary1()
@@ -29,7 +28,7 @@ JOINS IN SQL,,
 		delimiter ;
 		call sp_max_salary1();
 
--- sp using IN
+-- stored procedure using IN
 delimiter &&
 create procedure sp_sortBySal(in var int)
 begin
