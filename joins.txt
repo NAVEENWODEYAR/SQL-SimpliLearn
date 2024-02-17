@@ -29,39 +29,39 @@ JOINS IN SQL,,
 		call sp_max_salary1();
 
 -- stored procedure using IN
-delimiter &&
-create procedure sp_sortBySal(in var int)
-begin
-	select * from employee
-    order by salary desc
-    limit var;
-end &&
-delimiter ;
-call sp_sortBySal(5);
-
-
-# sp to update salary
-delimiter $$
-create procedure sp_updateSalary(IN name varchar(20),IN sal float)
-begin
-	update employee
-    set salary = sal
-    where first_name = name;
-end $$
-delimiter ;
-call sp_updateSalary('Bhaskar',254321);
+	delimiter &&
+	create procedure sp_sortBySal(in var int)
+	begin
+		select * from employee
+	    order by salary desc
+	    limit var;
+	end &&
+	delimiter ;
+	call sp_sortBySal(5);
+	
+	
+	# sp to update salary
+	delimiter $$
+	create procedure sp_updateSalary(IN name varchar(20),IN sal float)
+	begin
+		update employee
+	    set salary = sal
+	    where first_name = name;
+	end $$
+	delimiter ;
+	call sp_updateSalary('Bhaskar',254321);
 
  	
  	
  	 
-# sp for femaleEmpCount using OUT Parameter,
-delimiter $$
-create procedure sp_femaleEmpCount(OUT Fem_Count int)
-begin
-	select count(first_name) into Fem_Count from employee
-    where gender='Female';
-end $$
-delimiter ;
-call sp_femaleEmpCount(@F_emp);
-select @F_emp as Female_Employees;
+	# sp for femaleEmpCount using OUT Parameter,
+	delimiter $$
+	create procedure sp_femaleEmpCount(OUT Fem_Count int)
+	begin
+		select count(first_name) into Fem_Count from employee
+	    where gender='Female';
+	end $$
+	delimiter ;
+	call sp_femaleEmpCount(@F_emp);
+	select @F_emp as Female_Employees;
  			

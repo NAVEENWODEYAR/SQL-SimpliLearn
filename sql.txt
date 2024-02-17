@@ -1,5 +1,5 @@
 SQL
-- Language of database
+- Language of database.
 - Used as Client Server language for connecting frontEnd & backEnd.
 - ER diagram, provides the logical structure of db,(GUI of logical structure).
 - RelationShips.
