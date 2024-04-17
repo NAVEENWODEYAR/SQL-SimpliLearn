@@ -1,6 +1,5 @@
 Manifest-Version: 1.0
-Build-Jdk-Spec: 21
-Implementation-Title: GlobalExceptionHandler
-Implementation-Version: 1.0
+Built-By: LENOVO
+Build-Jdk: 21.0.1
 Created-By: Maven Integration for Eclipse
 
